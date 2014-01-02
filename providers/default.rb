@@ -56,7 +56,7 @@ action :create do
   end
 
   homeshick new_resource.username do
-    home home_directory
+    home home_directory.to_s
     keys new_resource.homeshicks
 
     only_if do
@@ -65,7 +65,7 @@ action :create do
   end
 
   sshkey new_resource.username do
-    home home_directory
+    home home_directory.to_s
     keys new_resource.sshkeys
 
     only_if do
