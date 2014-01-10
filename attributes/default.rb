@@ -21,8 +21,14 @@ default["account"]["removed_files"] = %w(
   /etc/skel/.bashrc
   /etc/skel/.bash_logout
   /etc/skel/.profile
+  /etc/skel/.bash_history
+  /etc/skel/.emacs
+  /etc/skel/.inputrc
 )
 
 default["account"]["removed_dirs"] = %w(
-
+  /etc/skel/bin
+  /etc/skel/.fonts
+  /etc/skel/.local
+  /etc/skel/.config
 )
