@@ -59,8 +59,8 @@ action :create do
     home home_directory.to_s
     keys new_resource.homeshicks
 
-    only_if do
-      new_resource.homeshicks
+    not_if do
+      new_resource.homeshicks.empty?
     end
   end
 
@@ -68,8 +68,8 @@ action :create do
     home home_directory.to_s
     keys new_resource.sshkeys
 
-    only_if do
-      new_resource.sshkeys
+    not_if do
+      new_resource.sshkeys.empty?
     end
   end
 
