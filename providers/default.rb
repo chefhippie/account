@@ -106,8 +106,6 @@ action :delete do
   new_resource.updated_by_last_action(true)
 end
 
-protected
-
 def home_directory
   @home_directory ||= begin
     value = if new_resource.home
