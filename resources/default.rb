@@ -22,6 +22,7 @@ actions :create, :delete
 attribute :username, :kind_of => String, :name_attribute => true
 attribute :shell, :kind_of => String, :default => "/bin/bash"
 attribute :home, :kind_of => String, :default => nil
+attribute :group, :kind_of => String, :default => nil
 attribute :uid, :kind_of => Integer, :default => nil
 attribute :gid, :kind_of => Integer, :default => nil
 attribute :homeshicks, :kind_of => Hash, :default => {}

@@ -36,7 +36,7 @@ action :create do
       action :create
     end
   else
-    group new_resource.username do
+    group new_resource.group || new_resource.username do
       gid new_resource.gid || new_resource.uid
       action :create
     end
