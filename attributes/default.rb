@@ -20,10 +20,14 @@
 default["account"]["removed_files"] = %w(
   /etc/skel/.bashrc
   /etc/skel/.bash_logout
+  /etc/skel/.gnu-emacs
+  /etc/skel/.i18n
   /etc/skel/.profile
   /etc/skel/.bash_history
   /etc/skel/.emacs
   /etc/skel/.inputrc
+  /etc/skel/.xim.template
+  /etc/skel/.xinitrc.template
 )
 
 default["account"]["removed_dirs"] = %w(
